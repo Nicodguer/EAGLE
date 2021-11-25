@@ -1,0 +1,30 @@
+.footer{
+  border-top: $color-primario 1px solid;
+  background: #ffffff;
+  color: $color-primario;
+  
+  .links{
+    ul {list-style-type: none;} 
+    li a{
+      text-decoration: none;
+      color: $color-primario;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:$color-primario;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(0, 0, 0, 0.1);} 
+}

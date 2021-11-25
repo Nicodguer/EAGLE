@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Eagle</title>
+</head>
+<body>
+    <header id="up">
+
+      <nav class="navbar navbar-expand-lg  border-bottom">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="../images/Captura.JPG" alt="aguila" class="w-25" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-end w-100">
+              <li class="nav-item" >
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about_us.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./study_courses.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./online_clases.html">Online</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./our_events.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact_us.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+  
+    </header>
+    <main>
+        <div class="container">
+            
+                <h1 class="contenedor">Contactanos</h1>
+                <form action="#" method="POST" name="formularioeagle" class="contact">
+                    <div class="contacto">
+                        <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre"><br>
+                        <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido" id="apellido"><br>
+                        <label for="email">Email:</label>
+                            <input type="email" name="email" id="email"><br>
+                        <label for="telefono">Teléfono:</label>
+                            <input type="tel" name="telefono" id="telefono"><br>
+                    </div>
+                    <div>
+                        <h4>Indicanos que curso te interesa</h4>
+                        <input type="radio" name="curso" value="Kids" id="kids"><label for="kids">Kids</label><br>
+                        <input type="radio" name="curso" value="Regular course" id="regularcourse"><label for="regularcourse">Regular course</label><br>
+                        <input type="radio" name="curso" value="Intensive course" id="intensivecourse"><label for="intensivecourse">Intensive course</label><br>
+                        <input type="radio" name="curso" value="Conversation" id="conversation"><label for="conversation">Conversation</label><br>
+                        <input type="radio" name="curso" value="First Certificate" id="firscertificate"><label for="firscertificate">First Certificate</label><br>
+                    </div>
+                    <div>
+                        <label for="modalidad">Modalidad de cursado</label>
+                        <select id="modalidad">
+                            <option value="starter" hidden></option><br> 
+                            <option value="Presencial">Presencial</option><br>
+                            <option value="Online">Online</option><br>
+                        </select>
+                    <div>
+                        <label for="comentario">Contanos sobre vos</label><br>
+                        <textarea name="comentarios" rows="10" cols="40" placeholder="Acá :)" id="comentario"></textarea><br>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" class="btn btn-primary">
+                        <input type="reset" value="Borrar" class="btn btn-primary"> 
+                    </div>
+            </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="mt-5 pt-5 pb-5 footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-xs-12 about-company">
+            <h2>Instituto EAGLE</h2>
+            <p class="pr-5">Somos familia y creemos en valores</p>
+            <p><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-instagram"></i></a></p>
+          </div>
+          <div class="col-lg-3 col-xs-12 links">
+            <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+              <ul class="m-0 p-0">
+                <li>- <a href="#" class="estilo--nosotros">Nosotros</a></li>
+                <li>- <a href="#" class="estilo--cursos">Cursos</a></li>
+                <li>- <a href="#" class="estilo--online">Online</a></li>
+                <li>- <a href="#" class="estilo--eventos">Eventos</a></li>
+                <li>- <a href="#" class="estilo--contacto">Contacto</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-4 col-xs-12 location">
+            <h4 class="mt-lg-0 mt-sm-4">Ubicación</h4>
+            <p>11 de septiembre 1042</p>
+            <p class="mb-0"><i class="fa fa-phone mr-3"></i>(2604) - 593044</p>
+            <p><i class="fa fa-envelope-o mr-3"></i>institutoeagle@hotmail.com</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col copyright">
+            <p><small>© 2021. All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+        <!-- SCRIPTS -->
+        <script src="js/bootstrap.js"></script>
+        <script src="https://kit.fontawesome.com/ac484d389e.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>    <script src="js/script.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </body>
+    </html>

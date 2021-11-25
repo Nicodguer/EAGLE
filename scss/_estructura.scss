@@ -1,0 +1,215 @@
+@import "variable";
+@import "tipografia";
+
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-style:normal;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+}
+
+
+body {
+        color:#000000;
+        line-height: 2rem;
+        font-size: 1.8rem; 
+        line-height: 4rem;
+        font-family:$tipografia-texto;
+        p{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+        h4{
+            font-size:25px;
+            margin:10px;
+            padding:10px 10px 10px 10px ;
+        }
+}
+
+.titulo-principal{
+    font-family: $tipografia-titulo;
+    color: $color-primario;
+    padding: 50px;
+    text-align: center;
+}
+.pregunta{
+    padding: 50px;
+}
+
+/*----------------- condicional ---------------------*/
+
+$palabra: instituto;
+
+p{
+    @if $palabra == instituto{
+        color: rgb(0, 0, 0);
+    } 
+    @else if $palabra == alumno{
+        color: red;
+    }
+    @else{
+        color: rgb(219, 1, 103);
+    }
+}
+
+/*--------------------- fin condicional --------------*/
+
+/*--------------------- bucles -----------------------*/
+
+@for $i from 1 through 50{
+    .bucle-#{$i}{font-size: 10px*$i;}
+}
+
+/*--------------------- fin bucles -----------------------*/
+
+/*---------------------- each ----------------------------*/
+@each $palabra in Kids, RegularCourse, IntensiveCourse, Conversation, FirstCertificate{
+    .#{$palabra}-icon{
+        color:red;
+    }
+} 
+/*---------------------- fin each ----------------------------*/
+/*---------------------- maps --------------------------------*/
+$linkfooter:(
+    nosotros: #FFBF86,
+    cursos:#F3F0D7,
+    online:#FFBF86,
+    eventos:#F3F0D7,
+    contacto:#FFBF86,
+    );
+
+    @each $claro, $color in $linkfooter{
+        .estilo--#{$claro}{
+            background-color: $color;
+        }
+    }
+/*---------------------- fin maps --------------------------------*/
+/*      SECCION CONTACTO        */
+
+.contacto{
+    text-align: justify;
+}
+
+.contact{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    transform: translate(20%);
+}
+
+input[type="radio"] {
+    -ms-transform: scale(0.7); 
+    -webkit-transform: scale(0.7); 
+    transform: scale(0.7);
+    margin-right: 1.2%;
+}
+
+/*      IMAGENES DE CURSOS      */
+
+
+
+.padreHijo h4{
+    text-align: center;
+    color: #87AAAA;
+} 
+
+
+
+
+/*       VISTA MOVIL        */
+
+
+@media only screen and (max-width:599px) {
+    
+.contenedorImagen {
+            display: none;
+        }
+.portadaTexto{
+    align-items: center;
+}
+.slogan{
+display:none;
+}
+
+.gridPadre {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas:
+                "kids"
+                "regularCourse"
+                "intensiveCourse"
+                "conversation"
+                "firstCertificate"
+            ;
+    
+        }
+       
+        .kids {
+            grid-area: kids;
+        }
+    
+        .regularCourse {
+            grid-area: regularCourse;
+        }
+    
+        .intensiveCourse {
+            grid-area: intensiveCourse;
+        }
+    
+        .conversation {
+            grid-area: conversation;
+        }
+    
+        .firstCertificate {
+            grid-area: firstCertificate;
+        }
+    
+    }
+    
+    /* VISTA TABLET */
+    @media only screen and (min-width:600px) and (max-width:1023px) {
+        
+.contenedorImagen {
+            display: none;
+        }
+    
+        .gridPadre {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                "kids regularCourse"
+                "intensiveCourse conversation"
+                "firstCertificate "
+            ;
+        }
+    
+        .kids {
+            grid-area: kids;
+        }
+    
+        .regularCourse {
+            grid-area: regularCourse;
+        }
+    
+        .intensiveCourse {
+            grid-area: intensiveCourse;
+        }
+    
+        .conversation {
+            grid-area: conversation;
+        }
+    
+        .firstCertificate {
+            grid-area: firstCertificate;
+        }
+    }
