@@ -1,18 +1,15 @@
 @import "variable";
-@import "tipografia";
 
-*{
-    padding:0%;
-    margin:0%;
-    box-sizing: border-box;
-}
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box; }
 
 html{
     font-size: 62.5%;
-    font-style:normal;
-    font-family: 'Montserrat', sans-serif;
     min-height: 100%;
 }
+
 
 
 body {
@@ -20,14 +17,11 @@ body {
         line-height: 2rem;
         font-size: 1.8rem; 
         line-height: 4rem;
-        font-family:$tipografia-texto;
+        font-family: 'Montserrat', sans-serif;
         p{
             font-size: 20px;
         }
-        h1{
-            font-size: 50px;
-            font-family: sans-serif;
-        }
+        
         h4{
             font-size:25px;
             margin:10px;
@@ -36,15 +30,39 @@ body {
 }
 
 .titulo-principal{
-    font-family: $tipografia-titulo;
     color: $color-primario;
     padding: 50px;
     text-align: center;
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $color-primario;
+    h1{
+        font-size: 10rem;
+        background-color: $color-primario;
+        color:$color-dos
+    }
 }
-.pregunta{
-    padding: 50px;
+.text-center{
+    h3{
+        color: $color-cuatro;
+        margin-bottom: 30rem;
+        font-size: 4rem;
+    }
+}
+.primeraPag{
+    h2{
+        margin-bottom: 15rem;
+    }
+    p{
+        margin-bottom: 15rem;
+    }
+    
 }
 
+.carusel{
+    margin-bottom: 15rem;
+}
 /*----------------- condicional ---------------------*/
 
 $palabra: instituto;
@@ -175,7 +193,7 @@ display:none;
     
     }
     
-    /* VISTA TABLET */
+/* VISTA TABLET */
     @media only screen and (min-width:600px) and (max-width:1023px) {
         
 .contenedorImagen {

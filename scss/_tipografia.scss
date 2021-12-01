@@ -1,2 +1,20 @@
-$tipografia-titulo: verdana;
-$tipografia-texto:arial;
+html{
+    font-size: 62.5%;
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display:inline-block;
+    color:rgb (134, 132, 132)
+}
